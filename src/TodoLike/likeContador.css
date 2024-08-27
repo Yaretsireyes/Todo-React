@@ -1,0 +1,19 @@
+.contador-likes {
+    margin-left: 29px;
+    font-size: 20px;
+}
+
+.container-likes:hover {
+    outline-color: #61dafa;
+    box-shadow: 0px 5px 50px rgb(68, 203, 221);
+}
+
+.disLike {
+    width: 40px;
+    height: 25px;
+}
+
+.like {
+    width: 40px;
+    height: 25px;
+}
