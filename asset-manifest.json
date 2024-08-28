@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Todo-React/static/css/main.5ee327b1.css",
-    "main.js": "/Todo-React/static/js/main.6857c4bb.js",
+    "main.css": "/Todo-React/static/css/main.4836d05b.css",
+    "main.js": "/Todo-React/static/js/main.3eb7136e.js",
     "static/media/dislike-svgrepo-com.svg": "/Todo-React/static/media/dislike-svgrepo-com.7243944a93d991f5b355de2ffc5b4d75.svg",
     "static/media/like-svgrepo-com.svg": "/Todo-React/static/media/like-svgrepo-com.460b54f27733d6131456a4f89095628e.svg",
     "index.html": "/Todo-React/index.html",
     "static/media/delete.svg": "/Todo-React/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
     "static/media/check.svg": "/Todo-React/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
-    "main.5ee327b1.css.map": "/Todo-React/static/css/main.5ee327b1.css.map",
-    "main.6857c4bb.js.map": "/Todo-React/static/js/main.6857c4bb.js.map"
+    "main.4836d05b.css.map": "/Todo-React/static/css/main.4836d05b.css.map",
+    "main.3eb7136e.js.map": "/Todo-React/static/js/main.3eb7136e.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee327b1.css",
-    "static/js/main.6857c4bb.js"
+    "static/css/main.4836d05b.css",
+    "static/js/main.3eb7136e.js"
   ]
 }
