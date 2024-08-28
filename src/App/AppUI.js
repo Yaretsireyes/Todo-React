@@ -27,6 +27,7 @@ function AppUI() {
         disminuirLikes,
         openModal,
         buttonAgregarModal,
+        Edit,
     } = React.useContext(TodoContext)
     return (
         <>
@@ -36,7 +37,7 @@ function AppUI() {
                 {loading && <TodosLoading />}
                 {error && <TodosError />}
                 {(!loading && searchTodos.length === 0 && searchTodos == searchValue) && <EmptyTodos />}
-                {(!loading && searchTodos.length < 1 && searchTodos != searchValue) && <BuscarTodo />}
+                {(!loading && searchTodos.length == 0 && searchValue != searchTodos) && <BuscarTodo />}
                 {searchTodos.map(todo => (<TodoItem
                     key={todo.id}
                     text={todo.text}
@@ -46,6 +47,7 @@ function AppUI() {
                     onAumentarLikes={() => aumentarLikes(todo.text)}
                     likes={todo.likes}
                     onDisminuirLikes={() => disminuirLikes(todo.text)}
+                    onEdit={(() => Edit(todo.id))}
                 />))}
             </TodoList >
             <TodoButton

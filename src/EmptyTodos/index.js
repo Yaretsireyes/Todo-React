@@ -4,7 +4,7 @@ import './EmptyTodos.css'
 
 function EmptyTodos() {
     return (
-        <section class="EmptyTodos-container">
+        <section className="EmptyTodos-container">
         <span><span>CREA</span></span>
         <span>TUS</span>
         <span><span>TODOS</span></span>

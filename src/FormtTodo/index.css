@@ -1,20 +1,17 @@
 .form-container {
-    width: 300px;
-    height: 300px;
+    width: 30%;
+    height: 40%;
     background-color: rgb(231, 93, 208);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 30px;
     position: relative;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.068);
     position: absolute;
     top: 25%;
     left: 38%;
-    box-shadow: 15px 25px 55px;
     border-style: dashed;
 
     .form-submit-btn {
@@ -47,6 +44,7 @@
     .container-botones {
         display: flex;
         flex-direction: row;
+        margin-left: 50px;
     }
 
 
