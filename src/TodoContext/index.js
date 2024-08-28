@@ -101,7 +101,7 @@ function TodoProvider({ children }) {
             (todo) => todo.id === id
         )
         newTodos[todoIndex].text = text
-        saveTodos[newTodos]
+        saveTodos(newTodos)
     }
 
     const Edit = (id) => {
