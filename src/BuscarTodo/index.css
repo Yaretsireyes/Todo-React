@@ -1,0 +1,70 @@
+.buscar-todos {
+    text-align: center;
+    font-size: 130px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
+    margin-top: 160px;
+}
+
+.buscar-todos>span {
+    display: inline-block;
+    line-height: 0.7;
+    position: relative;
+    color: #FFB485;
+    margin-right: 30px;
+}
+
+.buscar-todos>span>span {
+    display: inline-block;
+    position: relative;
+}
+
+.buscar-todos>span:nth-of-type(1) {
+    perspective: 1000px;
+    perspective-origin: 500% 50%;
+    color: #F0E395;
+}
+
+.buscar-todos>span:nth-of-type(1)>span {
+    transform-origin: 50% 100% 0px;
+    transform: rotateX(0);
+    animation: easyoutelastic 8s infinite;
+}
+
+.buscar-todos>span:nth-of-type(3) {
+    perspective: none;
+    perspective-origin: 50% 50%;
+    color: #D15C95;
+}
+
+.buscar-todos>span:nth-of-type(3)>span {
+    transform-origin: 100% 100% 0px;
+    transform: rotate(0deg);
+    animation: rotatedrop 8s infinite;
+}
+
+@keyframes rotatedrop {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(30deg);
+    }
+
+    15% {
+        transform: rotate(90deg);
+    }
+
+    70% {
+        transform: rotate(90deg);
+    }
+
+    80% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotateX(0);
+    }
+}

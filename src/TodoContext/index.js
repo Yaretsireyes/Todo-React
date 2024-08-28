@@ -17,7 +17,6 @@ function TodoProvider({ children }) {
 
     const [searchValue, setSearchValue] = useState('')
 
-
     const [openModal, setOpenModal] = useState(false)
 
     const buttonAgregarModal = () => {
@@ -27,6 +26,7 @@ function TodoProvider({ children }) {
             setOpenModal(false)
         }
     }
+
 
     const completeTodo = (id) => {
         const newTodos = [...todos]
@@ -41,10 +41,9 @@ function TodoProvider({ children }) {
         saveTodos(newTodos)
     }
 
-    const searchTodos = todos.filter((todos) => {
-        return todos.text.toLowerCase().includes(searchValue.toLocaleLowerCase())
-    }
-    )
+    const searchTodos = todos.filter((todo) => {
+        return todo.text.toLowerCase().includes(searchValue.toLocaleLowerCase())
+    })
 
     const addTodo = (text) => {
         const newTodos = [...todos]
@@ -52,11 +51,13 @@ function TodoProvider({ children }) {
             id: contador + 1,
             text,
             completed: false,
-            likes: 0
+            likes: 0,
         })
         saveContador(contador + 1)
         saveTodos(newTodos)
+        setOpenModal(false)
     }
+
     const deleteTodo = (id) => {
         const newTodos = [...todos]
         const todoIndex = newTodos.findIndex(
@@ -88,6 +89,7 @@ function TodoProvider({ children }) {
         }
         saveTodos(newTodos)
     }
+
 
     const completedTodos = todos.filter(todo => todo.completed).length
     const totalTodos = todos.length

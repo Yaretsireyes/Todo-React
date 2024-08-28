@@ -10,7 +10,7 @@ import { EmptyTodos } from '../EmptyTodos'
 import { TodoContext } from '../TodoContext';
 import { Modal } from '../Modal';
 import { FormTodo } from '../FormtTodo';
-
+import { BuscarTodo } from '../BuscarTodo'
 
 
 
@@ -20,6 +20,7 @@ function AppUI() {
         loading,
         error,
         searchTodos,
+        searchValue,
         completeTodo,
         deleteTodo,
         aumentarLikes,
@@ -34,7 +35,8 @@ function AppUI() {
             <TodoList>
                 {loading && <TodosLoading />}
                 {error && <TodosError />}
-                {(!loading && searchTodos.length === 0) && <EmptyTodos />}
+                {(!loading && searchTodos.length === 0 && searchTodos == searchValue) && <EmptyTodos />}
+                {(!loading && searchTodos.length < 1 && searchTodos != searchValue) && <BuscarTodo />}
                 {searchTodos.map(todo => (<TodoItem
                     key={todo.id}
                     text={todo.text}
